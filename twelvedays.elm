@@ -1,4 +1,3 @@
-import Html exposing (text)
 import List exposing (..) 
 import Tuple exposing (..) 
 
@@ -22,4 +21,4 @@ main =
   |> map (\(dag,gave)->(toString(dag+1)," "++gave++"\r\n"))
   |> reverse
   |> lagSang
-  |> text
+  |> syng
