@@ -13,7 +13,7 @@ lagSang l =
     [] -> ""
     v::h -> lagSang(h) 
       ++ (v |> first |> ordinal |> \s -> "\r\nOn the " ++ s ++ " day of Christimas my true love gave to me\r\n")
-      ++ (l |> map (\(dag,gave)-> toString(dag) ++ " "++ gave ++ "\r\n" ) |> foldr (++) "") 
+      ++ (l |> map (\(dag,gave)-> toString(dag) ++ " "++ gave ++ "\r\n" ) |> foldr (++) "\r\n") 
 
 main =
  ["partridge in a pear tree","turtle doves","french hens","calling birds","golden rings","geese a laying",
